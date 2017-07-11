@@ -109,18 +109,18 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="TIC TAC TOE" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZJQ-Qe-jig">
-                                <rect key="frame" x="70" y="28" width="235" height="44"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="40"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TiK-xH-5hB">
                                 <rect key="frame" x="131" y="170" width="105" height="71"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="TIC TAC TOE" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZJQ-Qe-jig">
+                                <rect key="frame" x="70" y="41" width="235" height="44"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="40"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
@@ -130,9 +130,24 @@
                             <outletCollection property="gestureRecognizers" destination="XN1-1L-Mrd" appends="YES" id="tt1-4S-YZq"/>
                         </connections>
                     </view>
+                    <connections>
+                        <outlet property="boxEight" destination="0gV-Jc-dgK" id="ZhW-l5-U3K"/>
+                        <outlet property="boxFive" destination="R0y-Eg-W5e" id="pi0-cl-yrJ"/>
+                        <outlet property="boxFour" destination="czW-YH-VQC" id="iJt-m0-2mE"/>
+                        <outlet property="boxNine" destination="Hrz-Hq-DfH" id="ohp-ka-8Pc"/>
+                        <outlet property="boxOne" destination="Xjd-5E-IFg" id="1bl-hC-UKy"/>
+                        <outlet property="boxSeven" destination="eg9-ni-4F5" id="eDO-Ew-IId"/>
+                        <outlet property="boxSix" destination="hhs-hp-1qG" id="X7D-LX-xgE"/>
+                        <outlet property="boxThree" destination="7Fu-Ne-hVX" id="Wui-hB-9rv"/>
+                        <outlet property="boxTwo" destination="TiK-xH-5hB" id="IYT-B1-8CK"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
-                <tapGestureRecognizer id="XN1-1L-Mrd"/>
+                <tapGestureRecognizer id="XN1-1L-Mrd">
+                    <connections>
+                        <action selector="onTouch:" destination="BYZ-38-t0r" id="Hma-NJ-E96"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="116" y="123.68815592203899"/>
         </scene>
